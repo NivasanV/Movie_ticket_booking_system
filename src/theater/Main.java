@@ -34,7 +34,8 @@ public class Main {
 			int row =0;
 			if(key.length == 3) row = 58;
 			else row = key[1];
-			arr[row-49][col-65] = '*';
+			if(arr[row-49][col-65] == '*') System.out.println(s+" is already booked");
+			else arr[row-49][col-65] = '*';
 		}
 //		char key[] = k.toCharArray();
 //		int col = key[0];
